@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 
 const NewsCards = ({ articleSummary }) => {
+    let abstractShortened = articleSummary.abstract
+    if ( abstractShortened.length > 25 ) {
+        abstractShortened = abstractShortened.substring(0, 24) + "..."
+    }
+
     return (
         <div className="Newscard-container">
             <header className="Newscard-header">
@@ -13,7 +18,9 @@ const NewsCards = ({ articleSummary }) => {
             <div className="Newscard-img">
                 <img src={articleSummary.multimedia[0].url} alt="Article Image" />
             </div>
-            
+            <p className="Newscard-description">
+                {abstractShortened}
+            </p>
         </div>
     )
 }
