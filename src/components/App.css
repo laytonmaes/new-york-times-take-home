@@ -2,7 +2,7 @@
   color: black;
   margin: 0;
 }
-.App {
+html, .App {
   text-align: center;
   background-color: #363636;
 }

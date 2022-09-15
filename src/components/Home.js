@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import NewsCards from "./NewsCards";
+import NewsCard from "./NewsCard";
 
 const Home = ({ articles, shownArticles }) => {
     let stories;
@@ -13,7 +13,7 @@ const Home = ({ articles, shownArticles }) => {
     }
 
     const storiesDisplay = stories.map((story) => {
-        return <NewsCards story={story} />
+        return <NewsCard story={story} />
     })
     return (
         <section className="Details">

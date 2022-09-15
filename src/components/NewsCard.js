@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-
-const NewsCards = ({ story }) => {
+import "./NewsCard.css"
+const NewsCard = ({ story }) => {
     let abstractShortened = story.abstract
-    if ( abstractShortened.length > 25 ) {
-        abstractShortened = abstractShortened.substring(0, 24) + "..."
+    if ( abstractShortened.length > 175 ) {
+        abstractShortened = abstractShortened.substring(0, 174) + "..."
     }
 
     return (
@@ -25,4 +25,4 @@ const NewsCards = ({ story }) => {
     )
 }
 
-export default NewsCards;
+export default NewsCard;
