@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import { Route } from "react-router-dom";
 import getArticles from '../apiCalls';
+import mockData from '../mockData';
 
 // ==================== components ==================== //
 import Home from './Home';
@@ -21,10 +22,12 @@ function App() {
       console.log(articles)
       console.log(data.results)
     })
+    .catch(err => console.log(err))
   }, [])
 
   const filterArticles = (searchTerm) => {
-    setShownArticles()
+    setShownArticles(mockData)
+    console.log(shownArticles)
   }
 
   return (
@@ -33,14 +36,20 @@ function App() {
         <h1>NY Times: Top Stories</h1>
       </header>
       <main className='App-body'>
-        <div className='Search-container'>
+        <form className='Search-form'>
         <input className="Search-bar" type="text" placeholder='Search...' />
-        <button className='Submit'>{searchIcon}</button>
-        </div>
+        <button 
+        className='Submit' 
+        type='submit'><img 
+        src={searchIcon} 
+        alt="search" 
+        onClick={() => {filterArticles()}}
+        /></button>
+        </form>
         <Route 
           exact path="/"
           render={() => {
-            return <Home />
+            return <Home articles={articles} shownArticles={shownArticles}/>
           }} 
         />
         <Route 
