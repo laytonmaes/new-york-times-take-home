@@ -25,7 +25,8 @@ function App() {
     .catch(err => console.log(err))
   }, [])
 
-  const filterArticles = (searchTerm) => {
+  const filterArticles = (event) => {
+    event.preventDefault()
     setShownArticles(mockData)
     console.log(shownArticles)
   }
@@ -43,7 +44,7 @@ function App() {
         type='submit'><img 
         src={searchIcon} 
         alt="search" 
-        onClick={() => {filterArticles()}}
+        onClick={(event) => {filterArticles(event)}}
         /></button>
         </form>
         <Route 
