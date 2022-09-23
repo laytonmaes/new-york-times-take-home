@@ -17,6 +17,7 @@ function App() {
   const [articles, setArticles] = useState([])
   const [shownArticles, setShownArticles] = useState([])
   const [singleArticle, setSingleArticle] = useState(emptyArticle)
+  const [query, setQuery] = useState("")
 
   // get and set base articles from api on page load
   useEffect(() => {
@@ -25,13 +26,22 @@ function App() {
     })
     .catch(err => console.log(err))
   }, [])
+  
+  useEffect(() => {
+    setShownArticles(articles)
+  }, [articles])
 
-  // filter through basic articles and return filtered list
-  const filterArticles = (event) => {
-    event.preventDefault()
-    setShownArticles(mockData)
-  }
-
+  useEffect(() => {
+    setShownArticles(
+      articles.filter(article => {
+        if (query === "") {
+          return article
+        } else if (article.title.toLowerCase().includes(query.toLowerCase())) {
+          return article
+        }
+      })
+    )    
+  }, [query])
   return (
     <div className="App">
       <header className="App-header">
@@ -41,24 +51,26 @@ function App() {
       </header>
 
       <main className='App-body'>
-        <form className='Search-form'>
-        <input className="Search-bar" type="text" placeholder='Search...' />
-        <button 
-        className='Submit' 
-        type='submit'><img 
-        src={searchIcon} 
-        alt="search" 
-        onClick={(event) => {filterArticles(event)}}
-        /></button>
-        </form>
         <Route 
           exact path="/"
           render={() => {
-            return <Home 
-              articles={articles} 
-              shownArticles={shownArticles} 
-              setSingleArticle={setSingleArticle} 
-            />
+           return (
+            <div className='Main-Page'>
+              <form className='Search-form'>
+                <input 
+                className="Search-bar" 
+                type="text" 
+                placeholder='Search...' 
+                onChange={event => setQuery(event.target.value)}
+                />
+              </form>
+              <Home 
+                articles={articles} 
+                shownArticles={shownArticles} 
+                setSingleArticle={setSingleArticle} 
+              />
+            </div>
+            )
           }} 
         />
         <Route 
