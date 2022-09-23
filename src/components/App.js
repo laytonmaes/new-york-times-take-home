@@ -16,6 +16,7 @@ function App() {
   const [articles, setArticles] = useState([])
   const [shownArticles, setShownArticles] = useState([])
 
+  // get and set base articles from api on page load
   useEffect(() => {
     getArticles().then((data) => {
       setArticles(data.results)
@@ -25,6 +26,7 @@ function App() {
     .catch(err => console.log(err))
   }, [])
 
+  // filter through basic articles and return filtered list
   const filterArticles = (event) => {
     event.preventDefault()
     setShownArticles(mockData)
