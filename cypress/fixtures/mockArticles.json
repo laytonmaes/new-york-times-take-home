@@ -1,0 +1,136 @@
+{
+ "results": [
+{
+  "section": "business",
+  "subsection": "economy",
+  "title": "Central Banks Accept Pain Now, Fearing Worse Later",
+  "abstract": "Federal Reserve officials and their counterparts around the world are trying to defeat inflation by rapidly raising interest rates. They know it will come at a cost.",
+  "url": "https://www.nytimes.com/2022/09/22/business/economy/central-banks-inflation.html",
+  "uri": "nyt://article/07adb249-f914-5dc9-8b16-859bd42fef52",
+  "byline": "By Jeanna Smialek",
+  "item_type": "Article",
+  "updated_date": "2022-09-22T18:27:23-04:00",
+  "created_date": "2022-09-22T17:19:02-04:00",
+  "published_date": "2022-09-22T17:19:02-04:00",
+  "material_type_facet": "",
+  "kicker": "",
+  "des_facet": [
+  "Banking and Financial Institutions",
+  "Prices (Fares, Fees and Rates)",
+  "Interest Rates",
+  "United States Economy",
+  "Recession and Depression",
+  "Economic Conditions and Trends",
+  "Inflation (Economics)",
+  "Supply Chain",
+  "Nineteen Hundred Seventies",
+  "Russian Invasion of Ukraine (2022)",
+  "Real Estate and Housing (Residential)",
+  "International Trade and World Market"
+  ],
+  "org_facet": [
+  "Bank of England",
+  "European Central Bank",
+  "Federal Reserve System"
+  ],
+  "per_facet": [
+  "Powell, Jerome H"
+  ],
+  "geo_facet": [],
+  "multimedia": [
+  {
+  "url": "https://static01.nyt.com/images/2022/09/22/business/00dc-fedassess01/merlin_201009120_cc0e8e18-ce03-4c13-a1a3-34317449ae4f-superJumbo.jpg",
+  "format": "Super Jumbo",
+  "height": 1363,
+  "width": 2048,
+  "type": "image",
+  "subtype": "photo",
+  "caption": "Volunteers at a food bank in London. The Bank of England on Thursday raised interest rates by half a point to 2.25 percent, even as it said that the United Kingdom might already be in a recession.",
+  "copyright": "Mary Turner for The New York Times"
+  },
+  {
+  "url": "https://static01.nyt.com/images/2022/09/22/business/00dc-fedassess01/00dc-fedassess01-threeByTwoSmallAt2X.jpg",
+  "format": "threeByTwoSmallAt2X",
+  "height": 400,
+  "width": 600,
+  "type": "image",
+  "subtype": "photo",
+  "caption": "Volunteers at a food bank in London. The Bank of England on Thursday raised interest rates by half a point to 2.25 percent, even as it said that the United Kingdom might already be in a recession.",
+  "copyright": "Mary Turner for The New York Times"
+  },
+  {
+  "url": "https://static01.nyt.com/images/2022/09/22/business/00dc-fedassess01/00dc-fedassess01-thumbLarge.jpg",
+  "format": "Large Thumbnail",
+  "height": 150,
+  "width": 150,
+  "type": "image",
+  "subtype": "photo",
+  "caption": "Volunteers at a food bank in London. The Bank of England on Thursday raised interest rates by half a point to 2.25 percent, even as it said that the United Kingdom might already be in a recession.",
+  "copyright": "Mary Turner for The New York Times"
+  }
+  ],
+  "short_url": "https://nyti.ms/3R25Iil"
+  },
+  {
+    "section": "stuffs",
+    "subsection": "economy",
+    "title": "Central Banks Doing Stuff",
+    "abstract": "Federal Reserve officials and their counterparts around the world are trying to defeat inflation by rapidly raising interest rates. They know it will come at a cost.",
+    "url": "https://www.nytimes.com/2022/09/22/business/economy/central-banks-inflation.html",
+    "uri": "nyt://article/07adb249-f914-5dc9-8b16-859bd42fef52",
+    "byline": "By Jeanna Smialek",
+    "item_type": "Article",
+    "updated_date": "2022-09-22T18:27:23-04:00",
+    "created_date": "2022-09-25T17:19:02-04:00",
+    "published_date": "2022-09-22T17:19:02-04:00",
+    "material_type_facet": "",
+    "kicker": "",
+    "des_facet": [
+      "stuff and things",
+      "all the things to do"
+    ],
+    "org_facet": [
+    "Bank of England",
+    "European Central Bank",
+    "Federal Reserve System"
+    ],
+    "per_facet": [
+    "Powell, Jerome H"
+    ],
+    "geo_facet": [],
+    "multimedia": [
+    {
+    "url": "https://static01.nyt.com/images/2022/09/22/business/00dc-fedassess01/merlin_201009120_cc0e8e18-ce03-4c13-a1a3-34317449ae4f-superJumbo.jpg",
+    "format": "Super Jumbo",
+    "height": 1363,
+    "width": 2048,
+    "type": "image",
+    "subtype": "photo",
+    "caption": "Volunteers at a food bank in London. The Bank of England on Thursday raised interest rates by half a point to 2.25 percent, even as it said that the United Kingdom might already be in a recession.",
+    "copyright": "Mary Turner for The New York Times"
+    },
+    {
+    "url": "https://static01.nyt.com/images/2022/09/22/business/00dc-fedassess01/00dc-fedassess01-threeByTwoSmallAt2X.jpg",
+    "format": "threeByTwoSmallAt2X",
+    "height": 400,
+    "width": 600,
+    "type": "image",
+    "subtype": "photo",
+    "caption": "Volunteers at a food bank in London. The Bank of England on Thursday raised interest rates by half a point to 2.25 percent, even as it said that the United Kingdom might already be in a recession.",
+    "copyright": "Mary Turner for The New York Times"
+    },
+    {
+    "url": "https://static01.nyt.com/images/2022/09/22/business/00dc-fedassess01/00dc-fedassess01-thumbLarge.jpg",
+    "format": "Large Thumbnail",
+    "height": 150,
+    "width": 150,
+    "type": "image",
+    "subtype": "photo",
+    "caption": "Volunteers at a food bank in London. The Bank of England on Thursday raised interest rates by half a point to 2.25 percent, even as it said that the United Kingdom might already be in a recession.",
+    "copyright": "Mary Turner for The New York Times"
+    }
+    ],
+    "short_url": "https://nyti.ms/3R25Iil"
+    }
+  ]
+}
