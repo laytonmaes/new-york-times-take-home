@@ -16,7 +16,7 @@ const Home = ({ articles, shownArticles, setSingleArticle }) => {
 
     //function to set single article
     const setNewArticle = (idIndex) => {
-        console.log(idIndex)
+        console.log(stories[idIndex])
         setSingleArticle(stories[idIndex])
     } 
 

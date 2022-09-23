@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import { Route } from "react-router-dom";
+import { NavLink, Route } from "react-router-dom";
 import getArticles from '../apiCalls';
 import mockData from '../mockData';
 import emptyArticle from '../emptyArticle';
@@ -35,8 +35,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>NY Times: Top Stories</h1>
+        <NavLink to={"/"}>
+          <h1>NY Times: Top Stories</h1>
+        </NavLink>
       </header>
+
       <main className='App-body'>
         <form className='Search-form'>
         <input className="Search-bar" type="text" placeholder='Search...' />

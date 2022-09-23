@@ -1,6 +1,7 @@
 *{
   color: black;
   margin: 0;
+  text-decoration: none;
 }
 html, .App {
   text-align: center;

@@ -1,0 +1,39 @@
+p {
+    padding: 1vh 0vh;
+}
+
+.Detail-Container {
+    background-color: #D9D9D9;
+    width: 80vw;
+    border-radius: 25px;
+    padding: 2vh 4vh;
+}
+
+.Detail-Container h2 {
+padding: 2vh;
+}
+
+.Detail-Container h3 {
+    padding: 2vh;
+}
+
+
+.Link-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2vh;
+}
+
+.Article-Tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2vh;
+    flex-wrap: wrap;
+}
+
+
+.Article-Tags h4 {
+    padding: 1vh 0vh;
+}
