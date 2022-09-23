@@ -27,10 +27,12 @@ function App() {
     .catch(err => console.log(err))
   }, [])
   
+  // set shown articles on page load
   useEffect(() => {
     setShownArticles(articles)
   }, [articles])
 
+  //change shown articles when search query changes
   useEffect(() => {
     setShownArticles(
       articles.filter(article => {
@@ -42,6 +44,7 @@ function App() {
       })
     )    
   }, [query])
+
   return (
     <div className="App">
       <header className="App-header">
@@ -61,11 +64,11 @@ function App() {
                 className="Search-bar" 
                 type="text" 
                 placeholder='Search...' 
+                value={query}
                 onChange={event => setQuery(event.target.value)}
                 />
               </form>
               <Home 
-                articles={articles} 
                 shownArticles={shownArticles} 
                 setSingleArticle={setSingleArticle} 
               />
