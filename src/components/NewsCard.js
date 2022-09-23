@@ -5,7 +5,7 @@ const NewsCard = ({ story }) => {
     if ( abstractShortened.length > 175 ) {
         abstractShortened = abstractShortened.substring(0, 174) + "..."
     }
-
+    console.log(story.multimedia)
     return (
         <div className="Newscard-container">
             <header className="Newscard-header">
@@ -16,7 +16,7 @@ const NewsCard = ({ story }) => {
                 <p>{story.published_date}</p>
             </section>
             <div className="Newscard-img">
-                <img src={story.multimedia[0].url} alt="Article Image" />
+                {story.multimedia && <img src={story.multimedia[0].url} alt="Article Image" />}
             </div>
             <p className="Newscard-description">
                 {abstractShortened}

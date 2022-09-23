@@ -15,13 +15,14 @@ import  searchIcon from "../assets/search_icon.svg"
 // ==================== app ==================== //
 function App() {
   const [articles, setArticles] = useState([])
-  const [shownArticles, setShownArticles] = useState([])
+  const [shownArticles, setShownArticles] = useState(mockData)
   const [singleArticle, setSingleArticle] = useState(emptyArticle)
   const [query, setQuery] = useState("")
 
   // get and set base articles from api on page load
   useEffect(() => {
     getArticles().then((data) => {
+      console.log(data.results)
       setArticles(data.results)
     })
     .catch(err => console.log(err))
