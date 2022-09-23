@@ -3,6 +3,7 @@ import './App.css';
 import { Route } from "react-router-dom";
 import getArticles from '../apiCalls';
 import mockData from '../mockData';
+import emptyArticle from '../emptyArticle';
 
 // ==================== components ==================== //
 import Home from './Home';
@@ -15,13 +16,12 @@ import  searchIcon from "../assets/search_icon.svg"
 function App() {
   const [articles, setArticles] = useState([])
   const [shownArticles, setShownArticles] = useState([])
+  const [singleArticle, setSingleArticle] = useState(emptyArticle)
 
   // get and set base articles from api on page load
   useEffect(() => {
     getArticles().then((data) => {
       setArticles(data.results)
-      console.log(articles)
-      console.log(data.results)
     })
     .catch(err => console.log(err))
   }, [])
@@ -30,7 +30,6 @@ function App() {
   const filterArticles = (event) => {
     event.preventDefault()
     setShownArticles(mockData)
-    console.log(shownArticles)
   }
 
   return (
@@ -52,13 +51,17 @@ function App() {
         <Route 
           exact path="/"
           render={() => {
-            return <Home articles={articles} shownArticles={shownArticles}/>
+            return <Home 
+              articles={articles} 
+              shownArticles={shownArticles} 
+              setSingleArticle={setSingleArticle} 
+            />
           }} 
         />
         <Route 
           exact path="/details"
           render={() => {
-            return <Details />
+            return <Details singleArticle={singleArticle} />
           }}
         />
       </main>
